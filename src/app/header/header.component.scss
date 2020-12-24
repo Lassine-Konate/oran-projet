@@ -1,0 +1,58 @@
+.containerheader {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(124, 123, 123);
+  border-radius: 3px;
+  padding: 4px 16px;
+  color: rgb(46, 45, 45);
+  //   border: 1px solid red;
+  .name {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 8px 0px;
+    color: #2e5cb8;
+    // border: 1px solid red;
+  }
+  .items {
+    margin-left: 72px;
+    flex: 1;
+    // border: 1px solid red;
+    font-size: 0.9rem;
+    font-weight: 400;
+    // color: rgb(46, 45, 45);
+    .item {
+      // margin-left: 16px;
+      cursor: pointer;
+      padding: 4px 8px;
+      // border: 1px solid red;
+    }
+    .current-option {
+      background-color: rgb(117, 116, 116);
+      border-radius: 3px;
+      color: rgb(236, 154, 125);
+    }
+  }
+  .settings {
+    // border: 1px solid red;
+    font-size: 0.9rem;
+    font-weight: 400;
+    .language {
+      padding: 2px 8px;
+      cursor: pointer;
+      border-right: 1px solid rgb(90, 86, 86);
+    }
+    .admin {
+      margin-left: 24px;
+      border-radius: 2px;
+
+      border: 1px solid rgb(90, 86, 86);
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+.commonhorizontal {
+  // allow to center the contain by horigontale
+  display: flex;
+  align-items: center;
+}

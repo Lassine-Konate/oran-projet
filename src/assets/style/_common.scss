@@ -1,0 +1,112 @@
+@import "./variable";
+@mixin card {
+  // flex: 1;
+  margin-top: 32px;
+  background-color: white;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  .subtitle {
+    margin-top: 0px;
+    padding: 8px 8px;
+    border-bottom: 1px solid gray;
+    font-size: 1.1rem;
+    font-weight: 500px;
+    font-family: $font-generale; //Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    .s-title {
+    }
+    i {
+      padding: 1px 2px;
+      font-size: $font-size-of-icon;
+      font-weight: bold;
+      background-color: $i_background;
+      border-radius: 2px;
+      margin-left: 8px;
+      color: $color-of-green;
+      @include center();
+    }
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5px solid rgb(207, 204, 204);
+    font-family: "Dosis";
+    cursor: pointer;
+    .name {
+      font-family: "Dosis";
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 8px 8px;
+      .nametext {
+        font-size: 1rem;
+        font-weight: 800;
+        color: rgb(90, 86, 86);
+      }
+      .date {
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+    }
+    .bodi {
+      padding: 8px 8px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      // border: 1px solid red;
+      .text {
+        line-height: 0rem;
+        font-size: 0.9rem;
+        color: blue;
+        flex-wrap: wrap;
+        // border: 1px solid red;
+        // include the shrk
+      }
+      .da {
+        display: flex;
+        font-family: $font-first; //"Dosis";
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+      }
+      .icons {
+        display: flex;
+        span {
+        }
+        i {
+          padding: 1px 2px;
+          font-size: $font-size-of-icon;
+          font-weight: bold;
+          background-color: $i_background;
+          color: $i_default;
+          border-radius: 2px;
+          margin-left: 8px;
+          @include center();
+        }
+        .edit {
+          color: green;
+        }
+        .remove {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin horizontalCenter {
+  display: flex;
+  align-items: center;
+}
+@mixin verticalCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,17 @@
+<div class="containerheader">
+  <span class="name commonhorizontal">Kalan</span>
+  <div class="items commonhorizontal">
+    <div
+      class="item"
+      *ngFor="let item of options"
+      [routerLink]="[item.route]"
+      routerLinkActive="current-option"
+    >
+      <span>{{ item.name }}</span>
+    </div>
+  </div>
+  <div class="settings commonhorizontal">
+    <span class="language" (click)="changeLangage()">{{ langue }}</span>
+    <span class="admin">Admin</span>
+  </div>
+</div>
