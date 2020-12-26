@@ -1,44 +1,29 @@
 <div class="big-bloc">
   <div class="container">
-    <div class="bloc-news">
-      <!-- <div class="subtitle">
-        <span class="s-title">Démarches</span>
-        <i class="material-icons edit" *ngIf="false">add</i>
-      </div>
-      <div class="items" *ngFor="let actuality of actuality">
-        <div class="name">
-          <span>{{ actuality.name }}</span>
-        </div>
-        <div class="bodi">
-          <div class="da">
-            <span class="des">
-              {{ actuality.content }}
-            </span>
-          </div>
-          <span class="icons">
-            <i class="material-icons edit" *ngIf="false">edit</i>
-            <i class="material-icons remove" *ngIf="false">delete</i>
-          </span>
-        </div>
-      </div> -->
-      <div class="bloc-date">
+    <div class="dv">
+      <div class="bloc-calendrier">
         <div class="subtitle">
-          <span class="s-title">Prémier période</span>
+          <span class="s-title">Calendrier</span>
           <i class="material-icons edit" *ngIf="false">add</i>
         </div>
         <div class="items" *ngFor="let calendrier of calendrier">
           <div class="name">
-            <span>Semestre hiver</span>
+            <span>{{ calendrier.name }}</span>
           </div>
           <div class="bodi">
             <div class="da">
-              <span class="begin">Debut : 21-10-20</span>
-              <span class="end">Final : 14-8-21</span>
+              <span class="des">
+                <span class="begin">
+                  Deb : <span style="color: green">{{ calendrier.begin }}</span>
+                </span>
+                <span class="end">
+                  Fin : <span style="color: red">{{ calendrier.begin }}</span>
+                </span>
+              </span>
             </div>
-            <span class="icons" *ngIf="false">
-              <i class="material-icons edit">edit</i>
-              <i class="material-icons remove">delete</i>
-              <i class="material-icons">arrow_right</i>
+            <span class="icons">
+              <i class="material-icons edit" *ngIf="false">edit</i>
+              <i class="material-icons remove" *ngIf="false">delete</i>
             </span>
           </div>
         </div>
@@ -50,7 +35,6 @@
         {{ accueil.subtitle }}
       </span>
       <span class="b-cour">{{ accueil.textbutton }}</span>
-      <span class="calendrier">Calendrier Scolaire</span>
     </div>
   </div>
   <footer>

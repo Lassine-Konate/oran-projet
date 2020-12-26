@@ -8,7 +8,12 @@ import { AccueilProps } from 'src/config';
   styleUrls: ['./accueil.component.scss'],
 })
 export class AccueilComponent implements OnInit {
-  calendrier = [{ date: '' }, { date: '' }, { data: '' }, { data: '' }];
+  calendrier = [
+    { name: 'Cour hiver', begin: '12/10/2020', end: '01/01/2021' },
+    { name: 'Vaccance d"hiver', begin: '01/01/2021', end: '01/02/2021' },
+    { name: 'Cour de printemps', begin: '01/03/2021', end: '01/02/2021' },
+    { name: 'Vaccance de printemps', begin: '01/01/2021', end: '01/02/2021' },
+  ];
   langue = 'Francais';
   actuality = [
     {
