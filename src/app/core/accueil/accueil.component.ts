@@ -8,13 +8,12 @@ import { AccueilProps } from 'src/config';
   styleUrls: ['./accueil.component.scss'],
 })
 export class AccueilComponent implements OnInit {
-  calendrier = [{ date: '' }, { date: '' }];
+  calendrier = [{ date: '' }, { date: '' }, { data: '' }, { data: '' }];
   langue = 'Francais';
   actuality = [
     {
-      name: 'Inscription a l"université',
-      content:
-        'Les inscription universitaire sont commence a partir du 1/2/20, Veuillez vous inscrire avant le 22/2/012 ',
+      name: 'premier',
+      content: ' 22/2/012 ',
     },
     {
       name: 'Incription a la cité',

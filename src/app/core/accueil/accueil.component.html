@@ -1,61 +1,7 @@
 <div class="big-bloc">
   <div class="container">
-    <div class="bloc-timeTable">
-      <span class="title">{{ accueil.title }}</span>
-      <span class="text">
-        {{ accueil.subtitle }}
-      </span>
-      <span class="b-cour">{{ accueil.textbutton }}</span>
-      <span class="calendrier">Calendrier Scolaire</span>
-      <div class="d">
-        <div class="bloc-date">
-          <div class="subtitle">
-            <span class="s-title">Prémier période</span>
-            <i class="material-icons edit" *ngIf="false">add</i>
-          </div>
-          <div class="items" *ngFor="let calendrier of calendrier">
-            <div class="name">
-              <span>Semestre hiver</span>
-            </div>
-            <div class="bodi">
-              <div class="da">
-                <span class="begin">Debut : 21-10-20</span>
-                <span class="end">Final : 14-8-21</span>
-              </div>
-              <span class="icons" *ngIf="false">
-                <i class="material-icons edit">edit</i>
-                <i class="material-icons remove">delete</i>
-                <i class="material-icons">arrow_right</i>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="bloc-date">
-          <div class="subtitle">
-            <span class="s-title">Seconde période</span>
-            <i class="material-icons edit" *ngIf="false">add</i>
-          </div>
-          <div class="items" *ngFor="let calendrier of calendrier">
-            <div class="name">
-              <span>Semestre hiver</span>
-            </div>
-            <div class="bodi">
-              <div class="da">
-                <span class="begin">Debut : 21-10-20</span>
-                <span class="end">Final : 14-8-21</span>
-              </div>
-              <span class="icons" *ngIf="false">
-                <i class="material-icons edit">edit</i>
-                <i class="material-icons remove">delete</i>
-                <i class="material-icons">arrow_right</i>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="bloc-news">
-      <div class="subtitle">
+      <!-- <div class="subtitle">
         <span class="s-title">Démarches</span>
         <i class="material-icons edit" *ngIf="false">add</i>
       </div>
@@ -74,7 +20,37 @@
             <i class="material-icons remove" *ngIf="false">delete</i>
           </span>
         </div>
+      </div> -->
+      <div class="bloc-date">
+        <div class="subtitle">
+          <span class="s-title">Prémier période</span>
+          <i class="material-icons edit" *ngIf="false">add</i>
+        </div>
+        <div class="items" *ngFor="let calendrier of calendrier">
+          <div class="name">
+            <span>Semestre hiver</span>
+          </div>
+          <div class="bodi">
+            <div class="da">
+              <span class="begin">Debut : 21-10-20</span>
+              <span class="end">Final : 14-8-21</span>
+            </div>
+            <span class="icons" *ngIf="false">
+              <i class="material-icons edit">edit</i>
+              <i class="material-icons remove">delete</i>
+              <i class="material-icons">arrow_right</i>
+            </span>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="bloc-timeTable">
+      <span class="title">{{ accueil.title }}</span>
+      <span class="text">
+        {{ accueil.subtitle }}
+      </span>
+      <span class="b-cour">{{ accueil.textbutton }}</span>
+      <span class="calendrier">Calendrier Scolaire</span>
     </div>
   </div>
   <footer>

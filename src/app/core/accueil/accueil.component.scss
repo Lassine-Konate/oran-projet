@@ -1,20 +1,23 @@
 @import "../../../assets/style/common";
 .big-bloc {
-  width: 1400px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(90vh - 10px);
   .container {
-    width: 1400px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
 
     .bloc-timeTable {
-      width: calc(1400px - 600px);
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
+      border: 1px solid coral;
 
       .title {
         width: 100%;
@@ -68,12 +71,9 @@
       }
     }
     .bloc-news {
-      width: 600px;
+      width: 25%;
+      border: 1px solid blue;
       @include card();
-      .des {
-        // color: rgb(30, 30, 129); #086408
-        color: rgb(131, 127, 127);
-      }
     }
   }
 
@@ -87,8 +87,7 @@
     // color: rgb(46, 45, 45);
     color: rgb(182, 174, 174);
     .link {
-      margin-top: 32px;
-
+      padding: 8px 0px;
       display: flex;
       flex-direction: column;
       font-size: 0.9rem;
