@@ -52,7 +52,7 @@ export class Config {
     const englishAccueilProps: AccueilProps = {
       title: 'welcome in Kalan blo',
       subtitle:
-        'Kalan blo allow you to integrate our communaute in Algérie  and reach the excellente we are happy you join our platteform , thanks excellente we are happy you join our platteform , thanks',
+        'Kalan blo allow you to integrate our communaute in Algérie  and reach the excellente we are happy you join our platteform  communaute in Algérie  and reach the excellente we are happy you join our platteform , thanks excellente we are happy you join our platteform , thanks, thanks excellente we are happy you join our platteform , thanks',
       textbutton: 'find course',
     };
 
