@@ -1,0 +1,50 @@
+<div class="container-course">
+  <div class="items-course">
+    <div class="item">
+      <div class="subtitle">
+        <span class="s-title">Filiere</span>
+        <i class="material-icons edit" *ngIf="false">add</i>
+      </div>
+      <div class="items" *ngFor="let course of course">
+        <div class="name">
+          <span>{{ course.name }}</span>
+        </div>
+        <div class="bodi">
+          <div class="da">{{ course.des }}</div>
+          <span class="icons">
+            <i class="material-icons edit" *ngIf="false">edit</i>
+            <i class="material-icons remove" *ngIf="false">delete</i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="details-course">
+    <div class="navbar">
+      <span>Licence 1 </span>
+      <span>Licence 2 </span>
+      <span>Licence 3</span>
+      <span>Master 1 </span>
+      <span>Master 2 </span>
+    </div>
+    <div class="expl"></div>
+    <div class="det">
+      <div class="cadre">
+        <span class="ti">energetique</span>
+        <div class="n">
+          <div class="se">
+            <img
+              src="https://www.bing.com/images/search?view=detailV2&ccid=CsB5IqlF&id=51CA06E6F397CB28CDE462F8579C76C20620553A&thid=OIP.CsB5IqlFQS9GZp4VVM8LuQHaI9&mediaurl=http%3a%2f%2fwww.garage-renault-mourmelon.com%2fassets%2fimg%2fimg-mecanique.png&exph=242&expw=200&q=mecanique&simid=608006845163047711&ck=1530D5B6041E07FDB692450BD6213509&selectedIndex=11&FORM=IRPRST"
+              alt=""
+            />
+            <div class="nom">
+              <span>niv : M1</span>
+              <span>sem: 1</span>
+            </div>
+          </div>
+          <div class="se"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

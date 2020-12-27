@@ -1,5 +1,5 @@
 <div class="big-bloc">
-  <div class="container">
+  <div class="container" *ngIf="false">
     <div class="dv">
       <div class="bloc-calendrier">
         <div class="subtitle">
@@ -34,8 +34,11 @@
       <span class="text">
         {{ accueil.subtitle }}
       </span>
-      <span class="b-cour">{{ accueil.textbutton }}</span>
+      <span class="b-cour" routerLink="course">{{ accueil.textbutton }}</span>
     </div>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
   </div>
   <footer>
     <div class="link">

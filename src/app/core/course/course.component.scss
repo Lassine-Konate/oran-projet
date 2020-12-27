@@ -1,0 +1,80 @@
+@import "../../../assets/style/common";
+
+.container-course {
+  width: 100%;
+  height: 100%;
+  //   border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .items-course {
+    width: 25vw;
+    height: 100%;
+    padding: 2vh 1vw;
+    font-size: 0.9vw;
+    .item {
+      @include card();
+
+      .subtitle {
+        .s-title {
+          font-size: 0.8vw;
+        }
+      }
+    }
+  }
+  .details-course {
+    width: 65vw;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 2vw;
+    .navbar {
+      margin-top: 5vh;
+      width: 100%;
+      background-color: white;
+      padding: 1vh 2vw;
+      display: flex;
+      justify-content: space-between;
+      span {
+        flex: 1;
+        text-align: center;
+      }
+    }
+    .expl {
+      width: 100%;
+      height: 15vh;
+      background-color: white;
+      margin-top: 2vh;
+    }
+    .det {
+      background-color: white;
+      flex: 1;
+      margin-top: 2vh;
+
+      .cadre {
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        .n {
+          display: flex;
+          .se {
+            img {
+              width: 100%;
+              height: 14vh;
+            }
+            width: 9vw;
+            height: 18vh;
+            border: 1px solid gray;
+            margin: 0.8vh 0.4vw;
+            font-size: 0.9vw;
+            .nom {
+              padding: 0vh 0.5vw;
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+}
