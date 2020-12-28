@@ -10,7 +10,7 @@
   .items-course {
     width: 25vw;
     height: 100%;
-    padding: 2vh 1vw;
+    padding: 4vh 1.2vw;
     font-size: 0.9vw;
     .item {
       @include card();
@@ -27,51 +27,61 @@
     // border: 1px solid red;
     display: flex;
     flex-direction: column;
-    padding: 1vh 2vw;
+    padding: 2vh 1vw;
     .navbar {
-      margin-top: 5vh;
-      width: 100%;
-      background-color: white;
-      padding: 1vh 2vw;
-      display: flex;
-      justify-content: space-between;
+      @include bordure();
+      @include center();
       span {
         flex: 1;
         text-align: center;
       }
     }
     .expl {
-      width: 100%;
-      height: 15vh;
-      background-color: white;
+      @include bordure();
+      padding: 2vh 1vw;
+      height: 10vh;
+      color: gray;
       margin-top: 2vh;
     }
     .det {
-      background-color: white;
-      flex: 1;
+      @include bordure();
+      // background-color: white;
+      // flex: 1;
       margin-top: 2vh;
-
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2vh 1vw;
+      justify-content: space-between;
       .cadre {
-        border: 1px solid gray;
         display: flex;
         flex-direction: column;
-        .n {
+        .name-filiere {
+          margin-top: 2vh;
+        }
+        .two {
           display: flex;
           .se {
+            width: 14vw;
+            height: 20vh;
+            background-color: rgb(216, 216, 216);
+            border-radius: 3px;
+            margin: 1vh 0vw;
             img {
+              border-radius: 3px;
               width: 100%;
-              height: 14vh;
+              height: 16vh;
             }
-            width: 9vw;
-            height: 18vh;
-            border: 1px solid gray;
-            margin: 0.8vh 0.4vw;
-            font-size: 0.9vw;
+
             .nom {
-              padding: 0vh 0.5vw;
+              height: 4vh;
+              padding: 0.5vh 1vw;
+              font-size: 0.8vw;
               display: flex;
               justify-content: space-between;
             }
+          }
+          :last-child {
+            margin-left: 1vw;
           }
         }
       }

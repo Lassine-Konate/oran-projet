@@ -8,6 +8,7 @@ import { AccueilComponent } from './core/accueil/accueil.component';
 import { DemarcheComponent } from './core/demarche/demarche.component';
 import { ForumComponent } from './core/forum/forum.component';
 import { Shared } from './shared.service';
+import { CourseComponent } from './core/course/course.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { Shared } from './shared.service';
     AccueilComponent,
     DemarcheComponent,
     ForumComponent,
+    CourseComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [Shared],

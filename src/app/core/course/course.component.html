@@ -21,28 +21,29 @@
   </div>
   <div class="details-course">
     <div class="navbar">
-      <span>Licence 1 </span>
+      <span style="color: green">Licence 1 </span>
       <span>Licence 2 </span>
       <span>Licence 3</span>
       <span>Master 1 </span>
       <span>Master 2 </span>
     </div>
-    <div class="expl"></div>
+    <div class="expl">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+      commodi inventore natus! Lorem ipsum dolor sit amet. Lorem ipsum dolor
+      sit, amet consectetur adipisicing elit. Voluptatibus veritatis iusto
+      placeat ea? Accusamus, numquam?
+    </div>
     <div class="det">
-      <div class="cadre">
-        <span class="ti">energetique</span>
-        <div class="n">
-          <div class="se">
-            <img
-              src="https://www.bing.com/images/search?view=detailV2&ccid=CsB5IqlF&id=51CA06E6F397CB28CDE462F8579C76C20620553A&thid=OIP.CsB5IqlFQS9GZp4VVM8LuQHaI9&mediaurl=http%3a%2f%2fwww.garage-renault-mourmelon.com%2fassets%2fimg%2fimg-mecanique.png&exph=242&expw=200&q=mecanique&simid=608006845163047711&ck=1530D5B6041E07FDB692450BD6213509&selectedIndex=11&FORM=IRPRST"
-              alt=""
-            />
+      <div class="cadre" *ngFor="let m of m">
+        <span class="name-filiere">{{ m.name }}</span>
+        <div class="two">
+          <div class="se" *ngFor="let e of m.e">
+            <img src="../../../assets/image/informatique.jpg" alt="" />
             <div class="nom">
-              <span>niv : M1</span>
-              <span>sem: 1</span>
+              <span style="color: green">niveau : </span>
+              <span style="color: blue">sem: 1</span>
             </div>
           </div>
-          <div class="se"></div>
         </div>
       </div>
     </div>

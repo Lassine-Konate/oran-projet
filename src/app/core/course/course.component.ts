@@ -6,6 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.scss'],
 })
 export class CourseComponent implements OnInit {
+  m = [
+    {
+      name: 'Energetique',
+      e: [
+        { level: 'm1', sem: '1' },
+        { level: 'm1', sem: '1' },
+      ],
+    },
+    {
+      name: 'Installation Energetique',
+      e: [
+        { level: 'm1', sem: '1' },
+        { level: 'm1', sem: '1' },
+      ],
+    },
+  ];
   course = [
     {
       name: 'Informatique',

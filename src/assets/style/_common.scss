@@ -96,6 +96,12 @@
   }
 }
 
+@mixin bordure {
+  background-color: white;
+  font-size: 0.8vw;
+  padding: 1vh 0vw;
+  border-radius: 3px;
+}
 @mixin center {
   display: flex;
   justify-content: center;
